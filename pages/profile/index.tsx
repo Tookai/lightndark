@@ -1,7 +1,7 @@
 import { Box, Center, Flex, Heading, Text } from "@chakra-ui/react";
 import Post from "../../components/Post";
 
-const index = () => {
+const Index = () => {
   return (
     <Flex w={"full"} h={"calc(100vh - 72px)"} justifyContent={"flex-start"} flexDir={"column"}>
       <Heading textAlign={"center"}>Profile</Heading>
@@ -62,4 +62,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

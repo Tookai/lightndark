@@ -2,7 +2,7 @@ import { Box, Button, Flex, Heading, Input, Text } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
-const index = () => {
+const Index = () => {
   const router = useRouter();
 
   const [loading, setLoading] = useState<boolean>(false);
@@ -32,4 +32,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
