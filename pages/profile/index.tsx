@@ -3,7 +3,7 @@ import Post from "../../components/Post";
 
 const index = () => {
   return (
-    <Flex w={"full"} h={"calc(100vh - 72px)"} justifyContent={"flex-start"} flexDir={"column"} overflowX={"auto"}>
+    <Flex w={"full"} h={"calc(100vh - 72px)"} justifyContent={"flex-start"} flexDir={"column"}>
       <Heading textAlign={"center"}>Profile</Heading>
 
       <Center>

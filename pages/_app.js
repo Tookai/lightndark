@@ -39,7 +39,7 @@ function MyApp({ Component, pageProps, router }) {
     <ChakraProvider theme={theme}>
       <Navbar />
       <AnimatePresence exitBeforeEnter>
-        <motion.div key={router.route} initial="initial" animate="animate" exit="exit" variants={fade}>
+        <motion.div key={router.route} initial="initial" animate="animate" exit="exit" variants={slide}>
           <Component {...pageProps} />
         </motion.div>
       </AnimatePresence>
