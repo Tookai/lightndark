@@ -9,7 +9,7 @@ interface IProps {
 
 const Post = ({ title, image, content, author }: IProps) => {
   return (
-    <Box w={"40%"} p={4} m={2} boxShadow={"lg"} rounded={"lg"} bg={''}>
+    <Box w={"40%"} p={4} m={2} boxShadow={"lg"} rounded={"lg"} bg={""}>
       <Text>{author}</Text>
       <Box>
         <Text fontSize={"lg"}>{title}</Text>
