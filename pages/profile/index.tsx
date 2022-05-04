@@ -1,4 +1,4 @@
-import { Box, Center, Flex, Heading, Text } from "@chakra-ui/react";
+import { Center, Flex, Heading } from "@chakra-ui/react";
 import Post from "../../components/Post";
 
 const Index = () => {
