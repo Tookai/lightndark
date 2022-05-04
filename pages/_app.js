@@ -1,8 +1,7 @@
 import { ChakraProvider } from "@chakra-ui/react";
-import theme from "../styles/theme";
-import global from "../styles/global.css";
-import Navbar from "../components/Navbar";
 import { AnimatePresence, motion } from "framer-motion";
+import Navbar from "../components/Navbar";
+import theme from "../styles/theme";
 
 function MyApp({ Component, pageProps, router }) {
   const slide = {
@@ -39,7 +38,13 @@ function MyApp({ Component, pageProps, router }) {
     <ChakraProvider theme={theme}>
       <Navbar />
       <AnimatePresence exitBeforeEnter>
-        <motion.div key={router.route} initial="initial" animate="animate" exit="exit" variants={slide}>
+        <motion.div
+          key={router.route}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          variants={slide}
+        >
           <Component {...pageProps} />
         </motion.div>
       </AnimatePresence>
