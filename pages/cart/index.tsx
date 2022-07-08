@@ -83,7 +83,7 @@ const Cart = () => {
       maxW={"80%"}
       mx={"auto"}
     >
-      <Heading textAlign={"center"}>Home</Heading>
+      <Heading textAlign={"center"}>Cart</Heading>
 
       <Flex h={"full"}>
         <Flex flex={"10"} p={4} flexDir={"column"} alignItems={"center"}>
@@ -110,27 +110,45 @@ const Cart = () => {
               justifyContent={"center"}
               p={2}
             >
+              {cart.length > 0 && (
+                <motion.div
+                  key={cart.length}
+                  initial="initial"
+                  animate="animate"
+                  exit="exit"
+                  variants={diveIn}
+                >
+                  <Box bg={"blue.200"} w={10} h={10} rounded={"full"} />
+                </motion.div>
+              )}
+            </Flex>
+
+            <Text>You currently have</Text>
+
+            <Flex align={"center"} justifyContent={"center"}>
               <motion.div
                 key={cart.length}
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                variants={diveIn}
+                variants={cart.length > 0 ? zoomIn : fade}
               >
-                <Box bg={"blue.200"} w={10} h={10} rounded={"full"} />
+                <Flex
+                  rounded={"full"}
+                  bg={"blue.200"}
+                  color={"red.500"}
+                  fontSize={cart.length < 10 ? "3xl" : "xl"}
+                  fontWeight={"bold"}
+                  p={2}
+                  w={12}
+                  h={12}
+                  justifyContent={"center"}
+                  alignItems={"center"}
+                >
+                  {cart.length}
+                </Flex>
               </motion.div>
             </Flex>
-
-            <Text>You currently have</Text>
-            <motion.div
-              key={cart.length}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-              variants={zoomIn}
-            >
-              {cart.length}
-            </motion.div>
             <Text>item{cart.length > 1 ? "s" : ""} in your cart.</Text>
           </Box>
 
@@ -141,9 +159,7 @@ const Cart = () => {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                variants={
-                  item.id < 3000 ? slide : item.id > 6000 ? fade : zoomIn
-                }
+                variants={item.id < 5000 ? slide : fade}
               >
                 <Box border={"1px"} rounded={"lg"} p={2} m={2}>
                   <Text>Id : {item.id}</Text>
