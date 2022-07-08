@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Text, useColorMode } from "@chakra-ui/react";
+import { Button, Flex, useColorMode } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 
 const Navbar = () => {
@@ -20,8 +20,13 @@ const Navbar = () => {
         <Button colorScheme={"red"} onClick={() => router.push("/home")}>
           Home
         </Button>
+        <Button colorScheme={"green"} onClick={() => router.push("/cart")}>
+          Cart
+        </Button>
       </Flex>
-      <Button onClick={toggleColorMode}>{colorMode === "light" ? "Dark" : "Light"}</Button>
+      <Button onClick={toggleColorMode}>
+        {colorMode === "light" ? "Dark" : "Light"}
+      </Button>
     </Flex>
   );
 };

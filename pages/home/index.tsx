@@ -3,7 +3,12 @@ import Post from "../../components/Post";
 
 const Index = () => {
   return (
-    <Flex w={"full"} h={"calc(100vh - 72px)"} justifyContent={"flex-start"} flexDir={"column"}>
+    <Flex
+      w={"full"}
+      h={"calc(100vh - 72px)"}
+      justifyContent={"flex-start"}
+      flexDir={"column"}
+    >
       <Heading textAlign={"center"}>Home</Heading>
 
       <Center>
@@ -11,7 +16,9 @@ const Index = () => {
           <Post
             author={"Tookai"}
             title={"Le titre"}
-            image={"https://images.pexels.com/photos/10038447/pexels-photo-10038447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"}
+            image={
+              "https://images.pexels.com/photos/10038447/pexels-photo-10038447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            }
             content={
               "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia expedita fugiat officiis reprehenderit itaque molestiae molestias cumque. Sint aperiam vitae in at assumenda nulla quibusdam, pariatur eligendi animi alias dolor!"
             }
@@ -19,7 +26,9 @@ const Index = () => {
           <Post
             author={"Tookai"}
             title={"Le titre"}
-            image={"https://images.pexels.com/photos/10038447/pexels-photo-10038447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"}
+            image={
+              "https://images.pexels.com/photos/10038447/pexels-photo-10038447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            }
             content={
               "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia expedita fugiat officiis reprehenderit itaque molestiae molestias cumque. Sint aperiam vitae in at assumenda nulla quibusdam, pariatur eligendi animi alias dolor!"
             }
@@ -27,7 +36,9 @@ const Index = () => {
           <Post
             author={"Tookai"}
             title={"Le titre"}
-            image={"https://images.pexels.com/photos/10038447/pexels-photo-10038447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"}
+            image={
+              "https://images.pexels.com/photos/10038447/pexels-photo-10038447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            }
             content={
               "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia expedita fugiat officiis reprehenderit itaque molestiae molestias cumque. Sint aperiam vitae in at assumenda nulla quibusdam, pariatur eligendi animi alias dolor!"
             }
@@ -35,7 +46,9 @@ const Index = () => {
           <Post
             author={"Tookai"}
             title={"Le titre"}
-            image={"https://images.pexels.com/photos/10038447/pexels-photo-10038447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"}
+            image={
+              "https://images.pexels.com/photos/10038447/pexels-photo-10038447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            }
             content={
               "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia expedita fugiat officiis reprehenderit itaque molestiae molestias cumque. Sint aperiam vitae in at assumenda nulla quibusdam, pariatur eligendi animi alias dolor!"
             }
@@ -43,7 +56,9 @@ const Index = () => {
           <Post
             author={"Tookai"}
             title={"Le titre"}
-            image={"https://images.pexels.com/photos/10038447/pexels-photo-10038447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"}
+            image={
+              "https://images.pexels.com/photos/10038447/pexels-photo-10038447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            }
             content={
               "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia expedita fugiat officiis reprehenderit itaque molestiae molestias cumque. Sint aperiam vitae in at assumenda nulla quibusdam, pariatur eligendi animi alias dolor!"
             }
@@ -51,7 +66,9 @@ const Index = () => {
           <Post
             author={"Tookai"}
             title={"Le titre"}
-            image={"https://images.pexels.com/photos/10038447/pexels-photo-10038447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"}
+            image={
+              "https://images.pexels.com/photos/10038447/pexels-photo-10038447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            }
             content={
               "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia expedita fugiat officiis reprehenderit itaque molestiae molestias cumque. Sint aperiam vitae in at assumenda nulla quibusdam, pariatur eligendi animi alias dolor!"
             }
