@@ -23,6 +23,9 @@ const Navbar = () => {
         <Button colorScheme={"green"} onClick={() => router.push("/cart")}>
           Cart
         </Button>
+        <Button colorScheme={"green"} onClick={() => router.push("/list")}>
+          List
+        </Button>
       </Flex>
       <Button onClick={toggleColorMode}>
         {colorMode === "light" ? "Dark" : "Light"}

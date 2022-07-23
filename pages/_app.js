@@ -1,5 +1,6 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { AnimatePresence, motion } from "framer-motion";
+import { RecoilRoot } from "recoil";
 import Navbar from "../components/Navbar";
 import theme from "../styles/theme";
 
@@ -35,20 +36,22 @@ function MyApp({ Component, pageProps, router }) {
   };
 
   return (
-    <ChakraProvider theme={theme}>
-      <Navbar />
-      <AnimatePresence exitBeforeEnter>
-        <motion.div
-          key={router.route}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-          variants={slide}
-        >
-          <Component {...pageProps} />
-        </motion.div>
-      </AnimatePresence>
-    </ChakraProvider>
+    <RecoilRoot>
+      <ChakraProvider theme={theme}>
+        <Navbar />
+        <AnimatePresence exitBeforeEnter>
+          <motion.div
+            key={router.route}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            variants={slide}
+          >
+            <Component {...pageProps} />
+          </motion.div>
+        </AnimatePresence>
+      </ChakraProvider>
+    </RecoilRoot>
   );
 }
 
