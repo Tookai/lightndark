@@ -2,6 +2,7 @@ import { Box, Button, Flex, Heading, Input, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { useRecoilState } from "recoil";
 import { postsListState } from "../../recoil/post";
+import { updateOneItem } from "../../utils/update";
 
 interface IProps {}
 
@@ -109,14 +110,6 @@ const List = ({}: IProps) => {
     setPostsList(posts);
   }, [posts]);
 
-  const updateOneItem = (item: any) => {
-    const newItems = [...postsList];
-    const index = newItems.findIndex((i: any) => i.id === item.id);
-    newItems[index] = item;
-    setPostsList(newItems);
-    setItem({ id: null, title: null });
-  };
-
   return (
     <Flex
       w={"full"}
@@ -142,7 +135,10 @@ const List = ({}: IProps) => {
         m={2}
       />
 
-      <Button m={4} onClick={() => updateOneItem(item)}>
+      <Button
+        m={4}
+        onClick={() => updateOneItem(postsList, setPostsList, item)}
+      >
         Update something
       </Button>
 
